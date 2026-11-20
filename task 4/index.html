@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071b36" />
+    <meta
+      name="description"
+      content="Explore the TechBridge 30-day practical internship roadmap for Data Analytics and Web Development." />
+    <title>Internship Roadmap | TechBridge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="TechBridge home">
+          <span class="brand-mark">TB</span>
+          <span class="brand-name"
+            >tech<span>bridge</span><small>LEARN · BUILD · GROW</small></span
+          >
+        </a>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="#roadmap">Internship roadmap</a>
+          <a href="#about">About the program</a>
+        </nav>
+        <a class="header-cta" href="mailto:techbridgebaselink@gmail.com"
+          >Contact us <span aria-hidden="true">↗</span></a
+        >
+      </header>
+
+      <main>
+        <section class="hero" id="about">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> TECHBRIDGE · PRACTICAL LEARNING
+            </p>
+            <h1>Learn by doing.<br /><span>Build what matters.</span></h1>
+            <p class="hero-description">
+              A guided 30-day experience designed to turn what you learn into
+              practical skills. Explore the tasks, follow the milestones and see
+              where each track can take you.
+            </p>
+            <a class="text-link" href="#roadmap"
+              >Explore the roadmap <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-aside" aria-label="Internship overview">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="hero-stat">
+              <span class="stat-label">YOUR LEARNING JOURNEY</span>
+              <strong>30<span> days</span></strong>
+              <span class="stat-caption"
+                >A practical path from learning to building.</span
+              >
+            </div>
+            <div class="floating-chip chip-top">
+              <span>✳</span> Learn with purpose
+            </div>
+            <div class="floating-chip chip-bottom">
+              <span>↗</span> Build real projects
+            </div>
+          </div>
+        </section>
+
+        <section class="roadmap-section" id="roadmap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">THE INTERNSHIP EXPERIENCE</p>
+              <h2>Your 30-day roadmap</h2>
+              <p class="section-intro">
+                Choose a track to explore its eight practical tasks and
+                milestones.
+              </p>
+            </div>
+            <div class="duration-pill">
+              <span class="duration-icon">◷</span
+              ><span
+                ><strong>30 days</strong
+                ><small>Practical internship</small></span
+              >
+            </div>
+          </div>
+
+          <div class="track-panel">
+            <div class="track-panel-top">
+              <div>
+                <span class="mini-label">CHOOSE YOUR TRACK</span>
+                <h3>Where do you want to grow?</h3>
+              </div>
+              <span class="track-count"
+                >02 TRACKS <span aria-hidden="true">↗</span></span
+              >
+            </div>
+            <div
+              class="track-switch"
+              role="group"
+              aria-label="Choose internship track">
+              <button
+                class="track-button is-active"
+                type="button"
+                data-track="analytics"
+                aria-pressed="true">
+                <span class="track-icon analytics-icon" aria-hidden="true"
+                  >▦</span
+                >
+                <span class="track-button-copy"
+                  ><strong>Data Analytics</strong
+                  ><small>Find meaning in data</small></span
+                >
+                <span class="track-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button
+                class="track-button"
+                type="button"
+                data-track="web"
+                aria-pressed="false">
+                <span class="track-icon web-icon" aria-hidden="true">⌘</span>
+                <span class="track-button-copy"
+                  ><strong>Web Development</strong
+                  ><small>Turn ideas into websites</small></span
+                >
+                <span class="track-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="selected-track" aria-live="polite">
+            <div class="selected-track-copy">
+              <span class="mini-label">CURRENTLY VIEWING</span>
+              <h3 id="selectedTrackName">Data Analytics</h3>
+              <p id="selectedTrackDescription">
+                Learn to clean, explore and communicate insights from data.
+              </p>
+            </div>
+            <div class="track-progress">
+              <div class="progress-meta">
+                <span>YOUR ROADMAP</span><strong>8 TASKS</strong>
+              </div>
+              <div class="progress-track"><span></span></div>
+              <div class="progress-days">
+                <span>DAY 01</span><span>DAY 30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-heading">
+            <div>
+              <span class="mini-label">THE JOURNEY</span>
+              <h3>Eight milestones. One big leap.</h3>
+            </div>
+            <p>Each task builds on the skills from the one before it.</p>
+          </div>
+          <div
+            class="task-list"
+            id="taskList"
+            aria-live="polite"
+            aria-label="Tasks for selected internship track">
+            <!-- Task cards are rendered here by script.js -->
+          </div>
+          <div class="roadmap-footer">
+            <span class="footer-spark" aria-hidden="true">✳</span>
+            <p>
+              <strong>Keep moving forward.</strong><br />Every milestone is
+              another step towards practical confidence.
+            </p>
+            <span class="footer-days"
+              >DAY 30 <span aria-hidden="true">→</span></span
+            >
+          </div>
+        </section>
+
+        <section class="bottom-cta">
+          <div>
+            <p class="eyebrow">READY TO TAKE THE NEXT STEP?</p>
+            <h2>Your journey starts with a decision.</h2>
+            <p>
+              Have questions about the TechBridge internship? Get in touch with
+              the team.
+            </p>
+          </div>
+          <a href="mailto:techbridgebaselink@gmail.com" class="cta-button"
+            >Talk to TechBridge <span aria-hidden="true">↗</span></a
+          >
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="#"
+          ><span class="brand-mark">TB</span
+          ><span class="brand-name"
+            >tech<span>bridge</span><small>LEARN · BUILD · GROW</small></span
+          ></a
+        >
+        <p>Bridging learning to real-world experience.</p>
+        <span
+          >© <span id="currentYear"></span> TechBridge. All rights
+          reserved.</span
+        >
+      </footer>
+    </div>
+  </body>
+</html>
