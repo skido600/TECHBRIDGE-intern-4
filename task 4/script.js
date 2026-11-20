@@ -239,6 +239,43 @@ trackButtons.forEach((button) => {
   });
 });
 
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+
+    menuToggle.classList.toggle("is-active", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation" : "Open navigation",
+    );
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("is-open");
+      menuToggle.classList.remove("is-active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      !navLinks.contains(event.target) &&
+      !menuToggle.contains(event.target)
+    ) {
+      navLinks.classList.remove("is-open");
+      menuToggle.classList.remove("is-active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    }
+  });
+}
+
 // Display the current year in the footer.
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
