@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071b36" />
+    <meta
+      name="description"
+      content="Track your TechBridge internship tasks, progress and learning journey." />
+    <title>Intern Dashboard | TechBridge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <script src="./js/dashboard.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a
+          class="brand"
+          href="dashboard.html"
+          aria-label="TechBridge dashboard home">
+          <img
+            src="./image/techbridge-logo.png"
+            alt="TechBridge logo"
+            class="brand-logo"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'grid';
+            " />
+          <span class="brand-fallback" aria-hidden="true">T</span>
+          <span class="brand-copy"> <small>INTERN PORTAL</small></span>
+        </a>
+        <div class="side-label">WORKSPACE</div>
+        <nav class="side-nav" aria-label="Dashboard navigation">
+          <a class="side-link active" href="#overview"
+            ><span class="nav-icon">⌂</span> Overview</a
+          >
+          <a class="side-link" href="#tasks"
+            ><span class="nav-icon">▤</span> My tasks
+            <span class="nav-count">8</span></a
+          >
+          <a class="side-link" href="#technologies"
+            ><span class="nav-icon">⌘</span> Technologies</a
+          >
+          <a class="side-link" href="./index.html"
+            ><span class="nav-icon">✳</span> Challenge Hub
+            <span class="external">↗</span></a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="side-help-icon">?</div>
+          <strong>Keep building.</strong>
+          <p>
+            Every task is a chance to turn knowledge into practical experience.
+          </p>
+          <a href="#tasks">View your tasks <span>↗</span></a>
+        </div>
+        <div class="sidebar-foot">© 2026 TechBridge</div>
+      </aside>
+
+      <main class="main-area" id="overview">
+        <header class="topbar">
+          <button
+            class="mobile-menu"
+            id="mobile-menu"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            ☰
+          </button>
+          <div class="breadcrumb">
+            Workspace <span>/</span> <strong>Dashboard</strong>
+          </div>
+          <div class="topbar-right">
+            <span class="live-dot"></span><span>Internship in progress</span>
+            <div class="avatar" aria-label="Leonard profile">L</div>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="welcome-row">
+            <div>
+              <div class="eyebrow"><span></span> YOUR LEARNING SPACE</div>
+              <h1>Welcome back, <span>Leonard.</span></h1>
+              <p class="welcome-sub">
+                Keep the momentum going. Your next milestone is one task away.
+              </p>
+              <div class="welcome-meta">
+                <span class="track-pill"><i></i> Web Development Intern</span
+                ><span class="status-pill"><i></i> In Progress</span>
+              </div>
+            </div>
+            <div class="welcome-art" aria-hidden="true">
+              <div class="art-ring ring-a"></div>
+              <div class="art-ring ring-b"></div>
+              <div class="art-code">&lt;/&gt;</div>
+              <span class="art-spark spark-a">✦</span
+              ><span class="art-spark spark-b">✳</span>
+              <div class="art-caption">LEARN <b>·</b> BUILD <b>·</b> GROW</div>
+            </div>
+          </section>
+
+          <section class="progress-section" aria-labelledby="progress-title">
+            <div class="section-topline">
+              <div>
+                <div class="eyebrow muted-eyebrow">YOUR INTERNSHIP</div>
+                <h2 id="progress-title">Progress overview</h2>
+              </div>
+              <span class="date-chip">NOV 20 — NOV 23, 2026</span>
+            </div>
+            <div class="progress-layout">
+              <div class="progress-main">
+                <div class="progress-number-row">
+                  <div>
+                    <strong id="completed-count">5</strong
+                    ><span class="progress-total"> / 8 tasks completed</span>
+                  </div>
+                  <strong class="progress-percent" id="progress-percent"
+                    >62.5%</strong
+                  >
+                </div>
+                <div
+                  class="progress-track"
+                  role="progressbar"
+                  aria-label="Internship progress"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="62.5"
+                  id="progress-bar">
+                  <span id="progress-fill" style="width: 62.5%"></span>
+                </div>
+                <div class="progress-foot">
+                  <span
+                    ><i class="legend-dot done-dot"></i
+                    ><b id="remaining-count">3</b> tasks remaining</span
+                  ><span id="progress-message"
+                    >You're making steady progress</span
+                  >
+                </div>
+              </div>
+              <div class="progress-stats">
+                <div class="stat-item">
+                  <span class="stat-icon blue-icon">▤</span>
+                  <div>
+                    <strong id="total-count">8</strong
+                    ><small>Total tasks</small>
+                  </div>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-icon green-icon">✓</span>
+                  <div>
+                    <strong id="stat-completed">5</strong
+                    ><small>Completed</small>
+                  </div>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-icon orange-icon">◷</span>
+                  <div>
+                    <strong id="stat-remaining">3</strong
+                    ><small>Remaining</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="tasks-section"
+            id="tasks"
+            aria-labelledby="tasks-title">
+            <div class="section-topline tasks-heading">
+              <div>
+                <div class="eyebrow muted-eyebrow">STAY ON TRACK</div>
+                <h2 id="tasks-title">Your internship tasks</h2>
+                <p class="section-description">
+                  Eight practical tasks designed to help you build real-world
+                  skills.
+                </p>
+              </div>
+              <a class="hub-shortcut" href="task-5/index.html"
+                >Explore Challenge Hub <span>↗</span></a
+              >
+            </div>
+            <div class="task-toolbar">
+              <div class="filter-tabs" role="group" aria-label="Filter tasks">
+                <button
+                  class="filter-btn active"
+                  data-filter="all"
+                  type="button"
+                  aria-pressed="true">
+                  All <span id="filter-all-count">8</span></button
+                ><button
+                  class="filter-btn"
+                  data-filter="completed"
+                  type="button"
+                  aria-pressed="false">
+                  Completed <span id="filter-completed-count">5</span></button
+                ><button
+                  class="filter-btn"
+                  data-filter="in-progress"
+                  type="button"
+                  aria-pressed="false">
+                  In Progress <span id="filter-progress-count">1</span></button
+                ><button
+                  class="filter-btn"
+                  data-filter="not-started"
+                  type="button"
+                  aria-pressed="false">
+                  Not Started <span id="filter-pending-count">2</span>
+                </button>
+              </div>
+              <label class="task-search"
+                ><span>⌕</span
+                ><input
+                  type="search"
+                  id="task-search"
+                  placeholder="Search tasks..."
+                  aria-label="Search tasks"
+              /></label>
+            </div>
+            <div class="task-grid" id="task-grid" aria-live="polite"></div>
+            <p class="empty-state" id="empty-state" hidden>
+              No tasks match your search. Try another keyword or filter.
+            </p>
+          </section>
+
+          <section
+            class="tech-section"
+            id="technologies"
+            aria-labelledby="tech-title">
+            <div class="tech-intro">
+              <div class="eyebrow"><span></span> KEEP EXPLORING</div>
+              <h2 id="tech-title">Modern web <span>technologies.</span></h2>
+              <p>
+                Discover the tools developers use to build fast, reliable and
+                scalable digital products.
+              </p>
+              <div
+                class="tech-tabs"
+                role="tablist"
+                aria-label="Technology topics">
+                <button
+                  class="tech-tab active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  data-tech="next">
+                  Next.js</button
+                ><button
+                  class="tech-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-tech="vue">
+                  Vue.js</button
+                ><button
+                  class="tech-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-tech="angular">
+                  Angular</button
+                ><button
+                  class="tech-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  data-tech="backend">
+                  Backend
+                </button>
+              </div>
+            </div>
+            <article
+              class="tech-card"
+              id="tech-panel"
+              role="tabpanel"
+              aria-live="polite">
+              <div class="tech-card-top">
+                <span class="tech-symbol" id="tech-symbol">N</span
+                ><span class="tech-category" id="tech-category"
+                  >REACT FRAMEWORK</span
+                >
+              </div>
+              <h3 id="tech-name">Next.js</h3>
+              <p id="tech-description">
+                Next.js is a React framework for building full-stack web
+                applications. It adds features such as routing, server
+                rendering, and flexible data fetching to help developers create
+                fast, production-ready websites.
+              </p>
+              <div class="tech-use">
+                <strong>COMMONLY USED FOR</strong
+                ><span id="tech-use-text"
+                  >Production websites, e-commerce platforms, dashboards and
+                  full-stack web applications.</span
+                >
+              </div>
+              <div class="tech-card-bottom">
+                <span id="tech-stack">React · JavaScript · TypeScript</span
+                ><a
+                  href="https://nextjs.org/learn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  id="tech-link"
+                  >Learn more <span>↗</span></a
+                >
+              </div>
+            </article>
+          </section>
+
+          <section class="backend-strip">
+            <div class="backend-copy">
+              <span class="backend-icon">⌘</span>
+              <div>
+                <strong>What happens behind the interface?</strong>
+                <p>
+                  Backend development powers the logic, data and services that
+                  make websites work.
+                </p>
+              </div>
+            </div>
+            <div class="backend-tags">
+              <span>Node.js</span><span>Express.js</span><span>Django</span
+              ><span>Flask</span><span>Laravel</span>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <a class="footer-brand" href="dashboard.html"
+              >TECH<span>BRIDGE</span></a
+            ><span>Bridging learning to real-world experience.</span
+            ><a href="task-5/index.html">Visit Challenge Hub ↗</a>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal-backdrop" id="task-modal" hidden>
+      <section
+        class="task-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title">
+        <button
+          class="modal-close"
+          id="modal-close"
+          type="button"
+          aria-label="Close task details">
+          ×
+        </button>
+        <div class="modal-kicker" id="modal-kicker">TASK 01</div>
+        <span class="modal-status" id="modal-status">COMPLETED</span>
+        <h2 id="modal-title">TechBridge Landing Page</h2>
+        <p id="modal-description"></p>
+        <div class="modal-detail">
+          <strong>WHAT YOU'LL PRACTISE</strong>
+          <p id="modal-outcome"></p>
+        </div>
+        <div class="modal-actions">
+          <button
+            class="button-secondary"
+            id="modal-close-bottom"
+            type="button">
+            Close</button
+          ><button class="button-primary" id="modal-complete" type="button">
+            Mark as completed <span>✓</span>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
