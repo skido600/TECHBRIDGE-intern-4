@@ -1,133 +1,18 @@
 [
   {
     "id": 1,
-    "title": "Build the TechBridge Homepage",
-    "description": "Create a responsive homepage for TechBridge by Baselink Services Limited, introducing the organisation and its practical learning opportunities.",
-    "details": "The homepage introduces TechBridge with the tagline “Bridging Learning to Real-World Experience”. It highlights the Data Analytics and Web Development programmes, the 30-Day Practical Internship, and the recommendation-letter benefit.",
-    "status": "completed",
-    "difficulty": "Beginner",
-    "timing": "Day 1",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "Responsive Design"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Build the TechBridge Programs Page",
-    "description": "Create the Programs experience and present the Data Analytics and Web Development learning tracks.",
-    "details": "The page explains the programme tracks, the practical topics interns will cover, and how interested learners can apply. The Web Development track covers HTML, CSS, JavaScript, Git, GitHub and practical projects; Data Analytics introduces spreadsheets, data cleaning, SQL and visualisation.",
-    "status": "completed",
-    "difficulty": "Beginner",
-    "timing": "Day 4",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Build the 30-Day Internship Tasks Experience",
-    "description": "Create an interface that presents the practical internship tasks, their timing and progress.",
-    "details": "The internship experience communicates the 30-day practical programme and makes its tasks easy to explore. The user's Task 3 brief covered a 30-day internship programme with eight practical tasks.",
-    "status": "completed",
-    "difficulty": "Beginner to Intermediate",
-    "timing": "Nov 10–12, 2026",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Build an Interactive Internship Roadmap",
-    "description": "Use JavaScript to make the internship roadmap interactive and easier to navigate.",
-    "details": "The roadmap experience includes navigation between the Internship Roadmap and About the Program, along with an Apply Now action. The recorded Task 4 status was In progress; the task was also returned for a header and mobile-toggle revision.",
-    "status": "in-progress",
-    "difficulty": "Beginner to Intermediate",
-    "timing": "Nov 13–16, 2026",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Build the TechBridge Challenge Hub",
-    "description": "Create an interactive hub where interns can explore practical development challenges.",
-    "details": "The Challenge Hub includes eight challenges, category filters, search, task details in a modal, and responsive layouts.",
-    "status": "completed",
-    "difficulty": "Intermediate",
-    "timing": "Nov 17–19, 2026",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Build the TechBridge Intern Dashboard",
-    "description": "Build a dashboard that displays internship tasks, progress, task status and task information.",
-    "details": "The dashboard brings the internship tasks into one place. It includes task cards, progress tracking, status indicators, task filters and a View Task interaction. Task 7 extends this dashboard by replacing static task data with API data.",
-    "status": "completed",
-    "difficulty": "Intermediate",
-    "timing": "Nov 20–23, 2026",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Build the TechBridge Task Management API",
-    "description": "Create an Express API and connect it to the intern dashboard so task information comes from the backend.",
-    "details": "Build GET /api/tasks, GET /api/tasks/:id and PUT /api/tasks/:id. Connect the dashboard with fetch(), add loading and error states, view a task without refreshing, mark tasks as completed, update progress and preserve task filters. The assignment also recommends an API status indicator and endpoint documentation.",
-    "status": "in-progress",
-    "difficulty": "Intermediate",
-    "timing": "Nov 24–26, 2026",
-    "technologies": [
-      "Bun",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "REST API",
-      "JSON"
-    ]
-  },
-  {
-    "id": 8,
-    "title": "Build the Complete TechBridge Internship Platform",
-    "description": "Bring the internship platform components together into one coherent experience.",
-    "details": "The official Web Development roadmap describes this as combining the different platform components into a complete TechBridge internship experience. This task is included as the next roadmap milestone.",
-    "status": "not-started",
-    "difficulty": "Intermediate",
-    "timing": "Day 26",
-    "technologies": [
-      "HTML5",
-      "CSS3",
-      "JavaScript"
-    ]
-  },
-  {
-    "id": 9,
-    "title": "task 1",
-    "description": "hehe",
+    "title": "Replace static task data with API responses",
+    "description": "replacing static data",
     "details": "",
-    "status": "not-started",
+    "status": "completed",
     "difficulty": "Intermediate",
     "timing": "Custom",
     "technologies": []
   },
   {
-    "id": 10,
-    "title": "internship day 7",
-    "description": "intern",
+    "id": 2,
+    "title": "going to gym by 8",
+    "description": "waking up",
     "details": "",
     "status": "completed",
     "difficulty": "Intermediate",
